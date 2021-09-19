@@ -4,40 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>Maranguape</title>
   </head>
   <body>
     <header>
-      <h1>Maranguape - CE</h1>
+      <a href="/">
+        <h1>Maranguape</h1>
+      </a>
+      <nav>
+        <a href="/frontend-checkpoint1">Início</a>
+        <a href="/frontend-checkpoint1/contato">Contato</a>
+      </nav>
     </header>
     <main>
-      <p>
-        Maranguape é um município cearense integrante da Região Metropolitana de
-        Fortaleza. É conhecida nacionalmente por ser a terra natal do comediante
-        <b>Chico Anysio</b>.
-      </p>
-      <p>
-        Já localmente também é conhecida por suas <b>serras</b> com vegetação
-        mista (Caatinga e Mata Atlântica), trilhas e balneários.
-      </p>
-      <p>
-        Apesar de ser um município territorialmente grande e com muitos
-        distritos rurais distantes de seu distrito central e urbano, a praça
-        representada na foto ao fundo (<b>Praça Capistrano de Abreu</b>) é muito
-        conhecida e serve como coração da vida noturna. Seu nome é uma homenagem
-        ao historiador Capistrano de Abreu, outro filho ilustre da terra.
-      </p>
-      <iframe
-        width="1280"
-        height="720"
-        src="https://www.youtube.com/embed/H5BxUG4c41I"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <div id="lista">
+      <section id="texto">
+        <h2>Resumo</h2>
+        <p>
+          Maranguape é um município cearense integrante da Região Metropolitana
+          de Fortaleza. É conhecida nacionalmente por ser a terra natal do
+          comediante
+          <b>Chico Anysio</b>.
+        </p>
+        <p>
+          Já localmente também é conhecida por suas <b>serras</b> com vegetação
+          mista (Caatinga e Mata Atlântica), trilhas e balneários.
+        </p>
+        <p>
+          Apesar de ser um município territorialmente grande e com muitos
+          distritos rurais distantes de seu distrito central e urbano, a praça
+          representada na foto ao lado (<b>Praça Capistrano de Abreu</b>) é
+          muito conhecida e serve como coração da vida noturna. Seu nome é uma
+          homenagem ao historiador Capistrano de Abreu, outro filho ilustre da
+          terra.
+        </p>
         <h2>Curiosidades:</h2>
         <ul>
           <li>
@@ -52,23 +52,45 @@
             <b>1 hora</b>.
           </li>
         </ul>
-      </div>
+      </section>
+      <section id="visual">
+        <img src="img/praca_capistrano.jpg" alt="Praça Capistrano de Abreu" />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/H5BxUG4c41I"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
     </main>
     <footer>
-      <a target="_blank" href="https://www.instagram.com/prefeituramaranguape/">
-        <img
-          src="img/instagram-square.svg"
-          alt="Perfil no Instagram de Maranguape"
-        />
-        @prefeituramaranguape
-      </a>
-      <a target="_blank" href="https://www.youtube.com/user/ARASOMAUDIO/">
-        <img
-          src="img/youtube-square.svg"
-          alt="Canal no YouTube de Maranguape"
-        />
-        Prefeitura de Maranguape
-      </a>
+      <div>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/prefeituramaranguape/"
+        >
+          <img
+            src="img/instagram-logo.png"
+            alt="Perfil no Instagram de Maranguape"
+          />
+          @prefeituramaranguape
+        </a>
+        <a target="_blank" href="https://www.youtube.com/user/ARASOMAUDIO/">
+          <img
+            src="img/youtube-logo.png"
+            alt="Canal no YouTube de Maranguape"
+          />
+          Prefeitura de Maranguape
+        </a>
+      </div>
+      <div>
+        <span>Conheça também:</span>
+        <a href="">Porto Alegre</a>
+        <a href="">Carlos Barbosa</a>
+      </div>
     </footer>
   </body>
 </html>

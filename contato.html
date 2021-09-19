@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <title>Maranguape | Contato</title>
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <h1>Maranguape</h1>
+      </a>
+      <nav>
+        <a href="/frontend-checkpoint1">Início</a>
+        <a href="/frontend-checkpoint1/contato">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <form action="/" method="POST">
+        <fieldset id="dados-pessoais">
+          <legend>Dados pessoais</legend>
+          <span>
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputs-pessoais"
+              placeholder="Nome completo"
+            />
+          </span>
+          <span>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="exemplo@email.com"
+              class="inputs-pessoais"
+            />
+          </span>
+          <span>
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Somente números"
+              class="inputs-pessoais"
+            />
+          </span>
+          <span>
+            <label for="nascimento">Data de nascimento:</label>
+            <input
+              type="date"
+              name="nascimento"
+              id="nascimento"
+              class="inputs-pessoais"
+            />
+          </span>
+        </fieldset>
+        <fieldset id="maioridade">
+          <legend>Você tem mais de 18 anos?</legend>
+          <span>
+            <input type="radio" name="adulto" id="sim" value="sim" />
+            <label for="sim">Sim</label>
+          </span>
+          <span>
+            <input type="radio" name="adulto" id="nao" value="nao" />
+            <label for="nao">Não</label>
+          </span>
+        </fieldset>
+        <fieldset id="ponto-interesse">
+          <legend>Qual é seu ponto de maior interesse na cidade?</legend>
+          <select name="pontoInteresse" id="pontoInteresse">
+            <option value="" disabled selected hidden>Selecione o ponto</option>
+            <option value="ipark">Ipark (Museu da Cachaça)</option>
+            <option value="pracaCapistranoDeAbreu">
+              Praça Capistrano de Abreu
+            </option>
+            <option value="trilhaSitioBoaVista">
+              Trilha na Serra (Sítio Boa Vista)
+            </option>
+          </select>
+        </fieldset>
+        <fieldset id="motivos">
+          <legend>Qual o motivo de seu interesse na cidade?</legend>
+          <span>
+            <input type="checkbox" name="estudar" id="estudar" />
+            <label for="estudar">Estudar</label>
+          </span>
+          <span>
+            <input type="checkbox" name="visitar" id="visitar" />
+            <label for="visitar">Visitar</label>
+          </span>
+          <span>
+            <input type="checkbox" name="morar" id="morar" />
+            <label for="morar">Morar</label>
+          </span>
+        </fieldset>
+        <div id="btns">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/prefeituramaranguape/"
+        >
+          <img
+            src="img/instagram-logo.png"
+            alt="Perfil no Instagram de Maranguape"
+          />
+          @prefeituramaranguape
+        </a>
+        <a target="_blank" href="https://www.youtube.com/user/ARASOMAUDIO/">
+          <img
+            src="img/youtube-logo.png"
+            alt="Canal no YouTube de Maranguape"
+          />
+          Prefeitura de Maranguape
+        </a>
+      </div>
+      <div>
+        <span>Conheça também:</span>
+        <a href="">Porto Alegre</a>
+        <a href="">Carlos Barbosa</a>
+      </div>
+    </footer>
+  </body>
+</html>
